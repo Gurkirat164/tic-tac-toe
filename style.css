@@ -89,3 +89,36 @@ body {
 .score-board span {
       color: aqua;
 }
+
+
+    .popup {
+        display: none; 
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.8);
+    }
+    .popup-content {
+      background: linear-gradient(45deg, #333, #111);  
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 60%; 
+      color: teal;
+    }
+    .close-button {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close-button:hover,
+    .close-button:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
