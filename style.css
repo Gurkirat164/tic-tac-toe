@@ -1,0 +1,91 @@
+/* *{
+      margin: 0px;
+      height: 0px;
+}  */
+
+h1 {
+      color: teal;
+      font-size: clamp(2rem, 8vw, 4rem);
+      margin-bottom: min(3vw, 20px);
+      font-weight: bold;
+}
+
+body {
+      background: linear-gradient(45deg, #333, #111);
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+}
+
+.game {
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      width: min(90vw, 400px);
+      gap: min(2vw, 10px);
+}
+
+.game-box {
+      height: min(12vw, 60px);
+      width: min(12vw, 60px);
+      padding: min(8vw, 50px);
+      font-size: clamp(1.2rem, 4.5vw, 2.5rem);
+      background-color: #333;
+      color: #fff;
+      border: 2px solid #555;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.line {
+      display: flex;
+      gap: min(2vw, 10px);
+}
+
+.reset-new-game {
+      display: flex;
+      flex-direction: column;
+      gap: min(2vw, 20px);
+      width: min(90vw, 400px);
+      margin-top: min(3vw, 20px);
+}
+
+.reset-button, .new-game-button {
+      background-color: #444;
+      color: #fff;
+      border: none;
+      padding: min(1vw, 10px) min(2vw, 20px);
+      font-size: clamp(1rem, 3vw, 1.5rem);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+}
+
+.score-board {
+      font-size: clamp(1rem, 3vw, 1.5rem);
+      padding: 0px;
+      border: 0px;
+      line-height: 0.6;
+}
+
+.score-board h2 {
+      color: teal;
+}
+
+.score-board p {
+      color: white;
+}
+
+.score-board span {
+      color: aqua;
+}
